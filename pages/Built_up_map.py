@@ -33,7 +33,7 @@ with col1:
 
 m = leafmap.Map(center=[0, 0], zoom=2)
 
-in_shp = "C:\Users\eriks\Documents\code\year_const\year_const.shp"
-m.add_shp(in_shp, layer_name="Countries")
+in_shp = r'C:\Users\eriks\Documents\code\year_const\year_const.shp'
+m.add_shp(in_shp, layer_name="construcciones")
 
 m
