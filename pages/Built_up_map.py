@@ -14,6 +14,13 @@ st.sidebar.image(logo)
 
 st.title("Interactive Map")
 
+m = leafmap.Map(center=[0, 0], zoom=2)
+
+in_shp = r'C:\Users\eriks\Documents\code\year_const\year_const.shp'
+m.add_shp(in_shp, layer_name="construcciones")
+
+m
+
 col1, col2 = st.columns([4, 1])
 options = list(leafmap.basemaps.keys())
 index = options.index("OpenTopoMap")
@@ -31,9 +38,3 @@ with col1:
     m.add_basemap(basemap)
     m.to_streamlit(height=700)
 
-m = leafmap.Map(center=[0, 0], zoom=2)
-
-in_shp = r'C:\Users\eriks\Documents\code\year_const\year_const.shp'
-m.add_shp(in_shp, layer_name="construcciones")
-
-m
