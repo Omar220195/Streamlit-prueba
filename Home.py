@@ -15,15 +15,15 @@ logo = "https://i.imgur.com/UbOXYAU.png"
 st.sidebar.image(logo)
 
 # Customize page title
-st.title("Streamlit for Geospatial Applications")
+st.title("Geovisor operación Apartadó")
 
 st.markdown(
     """
-    This multipage app template demonstrates various interactive web apps created using [streamlit](https://streamlit.io) and [leafmap](https://leafmap.org). It is an open-source project and you are very welcome to contribute to the [GitHub repository](https://github.com/opengeos/streamlit-map-template).
+    Se encuentran desplegados los diferentes geovisores para el proyecto de actualización catastral en el municipio de Apartadó
     """
 )
 
-st.header("Instructions")
+st.header("Apartadó")
 
 markdown = """
 
@@ -32,6 +32,7 @@ markdown = """
 
 st.markdown(markdown)
 
-m = leafmap.Map(minimap_control=True)
+m = leafmap.Map(minimap_control=True, center=[7.882293365998897 , -76.6249929671165],  # Coordinates for Colombia
+        zoom=13,  )
 m.add_basemap("OpenTopoMap")
-m.to_streamlit(height=500)
+m.to_streamlit(height=700)
