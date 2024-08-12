@@ -6,7 +6,7 @@ import matplotlib.colors as mcolors
 import folium
 
 # Define the path to your shapefile
-# shapefile_path = "https://github.com/Omar220195/Streamlit-prueba/raw/main/year_const.zip"
+shapefile_path = "https://github.com/Omar220195/Streamlit-prueba/raw/main/year_const.zip"
 
 # Sidebar configuration
 markdown = """
@@ -41,14 +41,10 @@ with col1:
     # Add basemap
     m.add_basemap(basemap)
 
-    m = leafmap.Map(center=[7.882293365998897 , -76.6249929671165], zoom=13)
-    in_shp = "https://github.com/Omar220195/Streamlit-prueba/raw/main/year_const.zip"
-    m.add_shp(in_shp, layer_name="shape")
-    m
-
+    
     # Load the shapefile
     try:
-        gdf = gpd.read_file(shape)
+        gdf = gpd.read_file(shapefile_path)
 
         # Remove rows with null values in 'const_year'
         gdf = gdf[gdf['const_year'].notnull()]
