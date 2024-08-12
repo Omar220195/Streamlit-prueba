@@ -6,7 +6,7 @@ import matplotlib.colors as mcolors
 import folium
 
 # Define the path to your shapefile
-shapefile_path = r'C:\Users\eriks\Documents\code\year_const\year_const.shp'
+shapefile_path = "https://github.com/Omar220195/Streamlit-prueba/raw/main/year_const.zip"
 
 # Sidebar configuration
 markdown = """
