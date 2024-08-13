@@ -6,7 +6,7 @@ import matplotlib.colors as mcolors
 import folium
 
 # Define the path to your shapefile
-shapefile_path = "https://github.com/Omar220195/Streamlit-prueba/raw/main/year_const/year_const.shp" 
+shapefile_path = "https://github.com/Omar220195/Streamlit-prueba/raw/main/year_const.shp" 
 
 # Sidebar configuration
 markdown = """
@@ -15,7 +15,7 @@ Desarrollado por Effective Actions.
 
 st.sidebar.title("About")
 st.sidebar.info(markdown)
-logo = "https://github.com/Omar220195/Streamlit-prueba/raw/main/year_const/logo.png"
+logo = "https://github.com/Omar220195/Streamlit-prueba/raw/main/logo.png"
 st.sidebar.image(logo)
 
 # Main title

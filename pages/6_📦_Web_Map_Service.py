@@ -10,7 +10,7 @@ Desarrollado por Effective Actions.
 
 st.sidebar.title("About")
 st.sidebar.info(markdown)
-logo = "https://github.com/Omar220195/Streamlit-prueba/raw/main/year_const/logo.png"
+logo = "https://github.com/Omar220195/Streamlit-prueba/raw/main/logo.png"
 st.sidebar.image(logo)
 
 
