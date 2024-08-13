@@ -25,7 +25,7 @@ st.title("Mapa clasificación Built Up")
 # Layout configuration
 col1, col2 = st.columns([4, 1])
 options = list(leafmap.basemaps.keys())
-index = options.index("OpenTopoMap")
+index = options.index("SATELLITE")
 
 with col2:
     basemap = st.selectbox("Select a basemap:", options, index)
