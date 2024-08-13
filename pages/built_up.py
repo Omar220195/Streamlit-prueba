@@ -10,13 +10,12 @@ shapefile_path = "https://github.com/Omar220195/Streamlit-prueba/raw/main/year_c
 
 # Sidebar configuration
 markdown = """
-A Streamlit map template
-<https://github.com/opengeos/streamlit-map-template>
+Desarrollado por Effective Actions.
 """
 
 st.sidebar.title("About")
 st.sidebar.info(markdown)
-logo = "https://i.imgur.com/UbOXYAU.png"
+logo = "https://github.com/Omar220195/Streamlit-prueba/raw/main/year_const/logo.png"
 st.sidebar.image(logo)
 
 # Main title

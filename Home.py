@@ -5,8 +5,7 @@ st.set_page_config(layout="wide")
 
 # Customize the sidebar
 markdown = """
-A Streamlit map template
-<https://github.com/opengeos/streamlit-map-template>
+Desarrollado por Effective Actions.
 """
 
 st.sidebar.title("About")
